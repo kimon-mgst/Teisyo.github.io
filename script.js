@@ -8,6 +8,7 @@ const charaData = [
     name: "飯田亜門",
     yomi: "いいだ",
     text:"チーム内で一番不憫",
+    text1:"チーム内人気は4位",
     grade: "3年",
     className: "C組",
     color: "#e74fff",
@@ -21,7 +22,7 @@ const charaData = [
     id: "azuma",
     name: "東馬柊",
     yomi: "あずま",
-    text: "メロ",
+    text: "メロの塊",
     grade: "3年",
     className: "A組",
     color: "#4fa3ff",
@@ -35,7 +36,7 @@ const charaData = [
     id: "motani",
     name: "茂谷恒一",
     yomi: "もたに",
-    text: "どしはな",
+    text: "どしはな先輩",
     grade: "3年",
     className: "B組",
     color: "#4fff83",
@@ -52,7 +53,7 @@ const charaData = [
     id: "onizuka",
     name: "鬼塚門斗",
     yomi: "おにづか",
-    text: "ヤクザ",
+    text: "関西ヤクザ",
     grade: "3年",
     className: "A組",
     color: "#5c398a",
@@ -66,7 +67,7 @@ const charaData = [
     id: "yuki",
     name: "結城ひより",
     yomi: "ゆうき",
-    text: "母",
+    text: "チームの母",
     grade: "3年",
     className: "C組",
     color: "#5574bd",
@@ -94,7 +95,7 @@ const charaData = [
     id: "mochizuki",
     name: "望月澪",
     yomi: "もちづき",
-    text: "可愛い子ぶる",
+    text: "ギャル",
     grade: "2年",
     className: "F組",
     color: "#b1eeff",
@@ -122,7 +123,7 @@ const charaData = [
     id: "suzuki",
     name: "鈴木凛",
     yomi: "すずき",
-    text: "スズラニアン",
+    text: "ポメラニアン",
     grade: "1年",
     className: "D組",
     color: "#4850bc",
@@ -215,6 +216,7 @@ function openCharaByIndex(index) {
     img.src = c.images.uniform;
     document.getElementById("modal-name").textContent = c.name;
     document.getElementById("modal-text").textContent = c.text;
+    document.getElementById("modal-text1").textContent = c.text1;
     document.getElementById("modal-grade").textContent = "学年：" + c.grade;
     document.getElementById("modal-class").textContent = "クラス：" + c.className;
     document.getElementById("chara-modal")
