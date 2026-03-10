@@ -1,5 +1,5 @@
 /* =========================
-   CHARACTER DATA（完成版）
+   CHARACTER DATA
 ========================= */
 
 const charaData = [
@@ -7,8 +7,9 @@ const charaData = [
     id: "amon",
     name: "飯田亜門",
     yomi: "いいだ",
-    text:"チーム内で一番不憫",
+    text:"一番不憫",
     text1:"チーム内人気は4位",
+    text2:"エース",
     grade: "3年",
     className: "C組",
     color: "#e74fff",
@@ -23,6 +24,8 @@ const charaData = [
     name: "東馬柊",
     yomi: "あずま",
     text: "メロの塊",
+    text1:"",
+    text2:"",
     grade: "3年",
     className: "A組",
     color: "#4fa3ff",
@@ -37,6 +40,8 @@ const charaData = [
     name: "茂谷恒一",
     yomi: "もたに",
     text: "どしはな先輩",
+    text1:"",
+    text2:"",
     grade: "3年",
     className: "B組",
     color: "#4fff83",
@@ -46,14 +51,13 @@ const charaData = [
       casual: "images/motanikoiti.png"
     }
   },
-
-  /* ===== 追加キャラ ===== */
-
   {
     id: "onizuka",
     name: "鬼塚門斗",
     yomi: "おにづか",
     text: "関西ヤクザ",
+    text1:"",
+    text2:"",
     grade: "3年",
     className: "A組",
     color: "#5c398a",
@@ -68,6 +72,8 @@ const charaData = [
     name: "結城ひより",
     yomi: "ゆうき",
     text: "チームの母",
+    text1:"",
+    text2:"",
     grade: "3年",
     className: "C組",
     color: "#5574bd",
@@ -82,6 +88,8 @@ const charaData = [
     name: "三千院朔",
     yomi: "さんぜんいん",
     text: "世界",
+    text1:"",
+    text2:"",
     grade: "2年",
     className: "F組",
     color: "#c35442",
@@ -96,6 +104,8 @@ const charaData = [
     name: "望月澪",
     yomi: "もちづき",
     text: "ギャル",
+    text1:"",
+    text2:"",
     grade: "2年",
     className: "F組",
     color: "#b1eeff",
@@ -110,6 +120,8 @@ const charaData = [
     name: "瓜生蔓奈",
     yomi: "うりゅう",
     text: "稲妻",
+    text1:"",
+    text2:"",
     grade: "1年",
     className: "C組",
     color: "#5a78bf",
@@ -124,6 +136,8 @@ const charaData = [
     name: "鈴木凛",
     yomi: "すずき",
     text: "ポメラニアン",
+    text1:"",
+    text2:"",
     grade: "1年",
     className: "D組",
     color: "#4850bc",
@@ -138,6 +152,8 @@ const charaData = [
     name: "茂谷直葉",
     yomi: "もたに",
     text: "冷静",
+    text1:"",
+    text2:"",
     grade: "1年",
     className: "C組",
     color: "#6c4c76",
@@ -217,6 +233,7 @@ function openCharaByIndex(index) {
     document.getElementById("modal-name").textContent = c.name;
     document.getElementById("modal-text").textContent = c.text;
     document.getElementById("modal-text1").textContent = c.text1;
+    document.getElementById("modal-text2").textContent = c.text2;
     document.getElementById("modal-grade").textContent = "学年：" + c.grade;
     document.getElementById("modal-class").textContent = "クラス：" + c.className;
     document.getElementById("chara-modal")
