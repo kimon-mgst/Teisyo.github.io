@@ -12,7 +12,7 @@ const charaData = [
     text2:"こつこつと積み重ねられる努力家。",
     text3:"エースなのに一番不憫で、後輩の凛にはよくパシられている。",
     text4:"チーム内人気は4位。",
-    grade: "3年", className: "C組",
+    grade: "3年",className: "C組",
     color: "#e74fff",
     icon: "images/amon.png",
     images: {
