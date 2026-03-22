@@ -251,7 +251,7 @@ function openCharaByIndex(index) {
     document.getElementById("modal-text2").textContent = c.text2;
     document.getElementById("modal-text3").textContent = c.text3;
     document.getElementById("modal-text4").textContent = c.text4;
-    document.getElementById("modal-grade").textContent = "学年：" + c.grade + "クラス：" + c.className;
+    document.getElementById("modal-grade").textContent = "学年：" + c.grade + c.className;
     document.getElementById("chara-modal")
       .style.setProperty("--chara-accent", c.color);
     img.classList.add("show");
